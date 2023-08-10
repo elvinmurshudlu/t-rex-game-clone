@@ -78,4 +78,9 @@
   right: 0;
   bottom: 0;
   position: absolute;
+}
+
+.info {
+  max-width: 900px;
+  margin: 0 auto;
 }/*# sourceMappingURL=main.css.map */
