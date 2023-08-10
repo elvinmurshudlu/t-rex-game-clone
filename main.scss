@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Kenia&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+    font-family: 'Kenia', cursive;
+}
+
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 500px;
+    position: relative;
+    // background-color: rgb(176, 246, 253);
+    background: url('./assets/images.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    .game_settings{
+        position: absolute;
+        top: 40%;
+        left: 35%;
+        padding: 10px 20px;
+        border: 1px outset black;
+        border-radius: 63px;
+    }
+
+    .restart-game{
+        display: none;
+        cursor: pointer;
+    }
+
+    &_design{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-bottom: 20px solid green;
+    }
+
+    #result{
+        position: absolute;
+        top: 30px;
+        right: 0;
+        letter-spacing: 1px;
+        
+    }
+   
+// 3 dəfə boyuduldu
+    #character{
+        display: flex;
+        width: 240px;
+        height: 330px;
+        // background-color: blue;
+        position: absolute;
+        bottom: 0;
+        left: 70px;
+
+
+        img{
+            margin-bottom: -65px;
+            width: 150%;
+            // height: 100%    ;
+            object-fit: contain;
+            object-position: bottom;
+        }
+
+        
+    }
+
+    .trap{
+        width: 80px;
+        height: 60px;
+        // background-color: green;
+        right: 0;
+        bottom: 0;
+        position: absolute;
+
+        .trap-image{
+            width: 100% !important;
+            height: 100% !important;
+            object-fit: cover;
+            object-position: bottom;
+            margin-bottom: -10%;
+        }
+    }
+
+    .water{
+        width: 60px;
+        height: 20px;
+        background-color: rgb(71, 226, 244);
+        right: 0;
+        bottom: 0;
+        position: absolute;
+
+    }
+
+    
+}

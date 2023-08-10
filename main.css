@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Kenia&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kenia", cursive;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  height: 500px;
+  position: relative;
+  background: url("./assets/images.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container .game_settings {
+  position: absolute;
+  top: 40%;
+  left: 35%;
+  padding: 10px 20px;
+  border: 1px outset black;
+  border-radius: 63px;
+}
+.container .restart-game {
+  display: none;
+  cursor: pointer;
+}
+.container_design {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-bottom: 20px solid green;
+}
+.container #result {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  letter-spacing: 1px;
+}
+.container #character {
+  display: flex;
+  width: 240px;
+  height: 330px;
+  position: absolute;
+  bottom: 0;
+  left: 70px;
+}
+.container #character img {
+  margin-bottom: -65px;
+  width: 150%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+.container .trap {
+  width: 80px;
+  height: 60px;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+}
+.container .trap .trap-image {
+  width: 100% !important;
+  height: 100% !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
+  margin-bottom: -10%;
+}
+.container .water {
+  width: 60px;
+  height: 20px;
+  background-color: rgb(71, 226, 244);
+  right: 0;
+  bottom: 0;
+  position: absolute;
+}/*# sourceMappingURL=main.css.map */
